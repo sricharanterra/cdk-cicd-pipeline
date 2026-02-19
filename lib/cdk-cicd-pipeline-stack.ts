@@ -5,6 +5,5 @@ import { Construct } from 'constructs';
 export class CdkCicdPipelineStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
-
   }
 }
