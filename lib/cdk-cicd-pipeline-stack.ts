@@ -15,6 +15,7 @@ export class CdkCicdPipelineStack extends cdk.Stack {
         commands:[//'cd cdk-cicd-pipeline', 
           'npm ci', 'npx cdk synth'],
         //primaryOutputDirectory: 'cdk-cicd-pipeline/cdk.out'
+        
       })
     })
 
