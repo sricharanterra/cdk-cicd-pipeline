@@ -6,7 +6,7 @@ interface LambdaStackProps extends StackProps {
 }
 
 export class LambdaStack extends Stack {
-     constructor(scope: Construct, id: string, props: StackProps) {
+     constructor(scope: Construct, id: string, props: LambdaStackProps) {
             super(scope,id,props)
         }
 }

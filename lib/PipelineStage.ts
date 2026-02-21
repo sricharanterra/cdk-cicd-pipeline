@@ -1,4 +1,4 @@
-import { StackProps, Stage, StageProps } from "aws-cdk-lib";
+import { Stage, StageProps } from "aws-cdk-lib";
 import { Construct } from "constructs";
 import { LambdaStack } from "./LambdaStack";
 
@@ -8,7 +8,7 @@ export class PipelineStage extends Stage {
         super(scope,id,props)
 
         new LambdaStack(this, 'LambdaStack', {
-            StageName: props.stageName
+            stageName: props.stageName
         })
     }
 
